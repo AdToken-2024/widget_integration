@@ -22,7 +22,6 @@ position: "bottom-mid" // Optional: Widget position (default: bottom-mid)
 
 ### Required Fields
 - `apiKey`: Your unique publisher API key
-- `apiBaseUrl`: AdToken API endpoint URL
 
 ### Optional Fields
 - `position`: Widget position on page

@@ -6,6 +6,7 @@ Add the following code to your HTML page where you want the ad widget to appear:
 
 ```html
 <script>
+window.process = { env: { NODE_ENV: "production" } };
 window.ADTOKEN_WIDGET_CONFIG = {
 containerId: "adtoken-widget", // Optional: Custom container ID
 apiKey: "YOUR_API_KEY", // Required: Get this from AdToken dashboard
@@ -40,6 +41,7 @@ position: "bottom-mid" // Optional: Widget position (default: bottom-mid)
 <head>
 <title>AdToken Integration Example</title>
 <script>
+window.process = { env: { NODE_ENV: "production" } };
 window.ADTOKEN_WIDGET_CONFIG = {
 containerId: "adtoken-widget",
 apiKey: "YOUR_API_KEY",

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adtoken Widget Integration</title>
+    <script>
+      window.process = { env: { NODE_ENV: "production" } };
+      window.ADTOKEN_WIDGET_CONFIG = {
+        containerId: "adtoken-widget",
+        apiKey:
+          "api-key", // TODO: remove this and add the actual api key
+        position: "bottom-mid", //Options: bottom-left, bottom-mid, bottom-right, top-left, top-mid, top-right, mid-left, mid-mid, mid-right
+        adSize: "banner", //Options: banner, medium_rectangle
+      };
+    </script>
+    <link rel="stylesheet" href="https://www.widget.adtoken.co/ad-widget.css" />
+    <script type="module" src="https://www.widget.adtoken.co/ad-widget.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
